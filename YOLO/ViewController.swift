@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         
         frenchDogCoreMLModel.frenchDogDelegate = self
         
+        yoloLabel.text = "Pick a photo to check if there is a french bulldog on it"
+        
     }
 
     @IBAction func buttonPressed(_ sender: UIBarButtonItem) {
@@ -58,11 +60,27 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 }
 //MARK: French Dog Delegate
 extension ViewController: FrenchDogDelegate {
-    func getFirstResult(_ item: String) {
+    func getFirstResult(_ first: String, _ confidence: Double) {
+        
+        var item = ""
+        switch first {
+        case "NonFrench":
+            item = "no french bulldog detected"
+        case "French":
+            item = "french bulldog detected"
+        default:
+            item = "Fucking chupacabra detected"
+        }
+        
+        
         DispatchQueue.main.async {
+            self.yoloLabel.text = "It's \(String(format: "%.0f", confidence * 100))% \(first)"
             self.navigationItem.title = item
+            
         }
     }
+    
+    
     
     
 }
