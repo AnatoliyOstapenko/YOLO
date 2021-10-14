@@ -62,15 +62,39 @@
 			children = (
 				FA3CBA1F271349BC00AEC10F /* AppDelegate.swift */,
 				FA3CBA21271349BC00AEC10F /* SceneDelegate.swift */,
-				FA3CBA4027187A4B00AEC10F /* FrenchDogCoreMLModel.swift */,
-				FA3CBA23271349BC00AEC10F /* ViewController.swift */,
-				FA3CBA3D2718795E00AEC10F /* FrenchDogImageClassifier.mlmodel */,
-				FA3CBA25271349BC00AEC10F /* Main.storyboard */,
+				FA3CBA492718B55500AEC10F /* Model */,
+				FA3CBA4E2718B57500AEC10F /* View */,
+				FA3CBA4B2718B56200AEC10F /* Controller */,
 				FA3CBA28271349C100AEC10F /* Assets.xcassets */,
 				FA3CBA2A271349C100AEC10F /* LaunchScreen.storyboard */,
 				FA3CBA2D271349C100AEC10F /* Info.plist */,
 			);
 			path = YOLO;
+			sourceTree = "<group>";
+		};
+		FA3CBA492718B55500AEC10F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3CBA3D2718795E00AEC10F /* FrenchDogImageClassifier.mlmodel */,
+				FA3CBA4027187A4B00AEC10F /* FrenchDogCoreMLModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA3CBA4B2718B56200AEC10F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA3CBA23271349BC00AEC10F /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FA3CBA4E2718B57500AEC10F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA3CBA25271349BC00AEC10F /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
