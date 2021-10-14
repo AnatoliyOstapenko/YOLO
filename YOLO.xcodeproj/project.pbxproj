@@ -13,6 +13,8 @@
 		FA3CBA27271349BC00AEC10F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CBA25271349BC00AEC10F /* Main.storyboard */; };
 		FA3CBA29271349C100AEC10F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3CBA28271349C100AEC10F /* Assets.xcassets */; };
 		FA3CBA2C271349C100AEC10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3CBA2A271349C100AEC10F /* LaunchScreen.storyboard */; };
+		FA3CBA3E2718795F00AEC10F /* FrenchDogImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA3CBA3D2718795E00AEC10F /* FrenchDogImageClassifier.mlmodel */; };
+		FA3CBA4127187A4B00AEC10F /* FrenchDogCoreMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3CBA4027187A4B00AEC10F /* FrenchDogCoreMLModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		FA3CBA28271349C100AEC10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3CBA2B271349C100AEC10F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3CBA2D271349C100AEC10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3CBA3D2718795E00AEC10F /* FrenchDogImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FrenchDogImageClassifier.mlmodel; sourceTree = "<group>"; };
+		FA3CBA4027187A4B00AEC10F /* FrenchDogCoreMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrenchDogCoreMLModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				FA3CBA1F271349BC00AEC10F /* AppDelegate.swift */,
 				FA3CBA21271349BC00AEC10F /* SceneDelegate.swift */,
+				FA3CBA4027187A4B00AEC10F /* FrenchDogCoreMLModel.swift */,
 				FA3CBA23271349BC00AEC10F /* ViewController.swift */,
+				FA3CBA3D2718795E00AEC10F /* FrenchDogImageClassifier.mlmodel */,
 				FA3CBA25271349BC00AEC10F /* Main.storyboard */,
 				FA3CBA28271349C100AEC10F /* Assets.xcassets */,
 				FA3CBA2A271349C100AEC10F /* LaunchScreen.storyboard */,
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3CBA3E2718795F00AEC10F /* FrenchDogImageClassifier.mlmodel in Sources */,
+				FA3CBA4127187A4B00AEC10F /* FrenchDogCoreMLModel.swift in Sources */,
 				FA3CBA24271349BC00AEC10F /* ViewController.swift in Sources */,
 				FA3CBA20271349BC00AEC10F /* AppDelegate.swift in Sources */,
 				FA3CBA22271349BC00AEC10F /* SceneDelegate.swift in Sources */,
